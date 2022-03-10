@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 2rem 1rem;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a""b c";
+    display: grid;
+}
+
+.box {
+    padding: 40px;
+}
+
+.join {
+    grid-area: a;
+}
+
+.join h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 26px;
+    padding-bottom: 22px;
+}
+
+.join h3 {
+    color: hsl(71, 73%, 54%);
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+    padding-bottom: 6px;
+}
+
+.sub {
+    grid-area: b;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.sub h2 {
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+.sub h5 {
+    display: flex;
+    align-items: center;
+}
+
+.sub h5 span.price {
+    color: hsl(204, 43%, 93%);
+    font-size: 32px;
+    padding: 0;
+}
+
+.sub h5 span {
+    color: hsla(204, 43%, 93%, 0.5);
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+.sub p {
+    color: hsl(204, 43%, 93%);
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.sub a {
+    border-radius: 4px;
+    padding: 16px 0px;
+    display: block;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(210, 12%, 97%);
+    text-decoration: none;
+    box-shadow: -2px 4px 20px 10px hsla(179, 62%, 43%, 0.5);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 26px;
+    font-weight: 600;
+}
+
+.why {
+    grid-area: c;
+    background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+.why h2 {
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+    padding-bottom: 18px;
+}
+
+.why ul {
+    list-style: none;
+}
+
+.why li {
+    color: hsla(204, 43%, 93%, 0.7);
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas: "a""b""c";
+    }
+    .box {
+        padding: 30px;
+    }
+}
